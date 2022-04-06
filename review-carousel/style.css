@@ -1,5 +1,5 @@
 body {
-  width: 600px;
+  width: 400px;
   margin: 0 auto;
   text-align: center;
   font-family: sans-serif;
@@ -10,12 +10,16 @@ article {
   -moz-box-shadow:10px 10px 10px 0px #d5d5d5 ;
   box-shadow:10px 10px 10px 0px #d5d5d5 ;
   border: 1px solid #d5d5d5;
-  padding: 10px 20px 20px 20px;
+  padding: 20px;
   color: #474747;
 }
 
-#author{
+#author {
   margin-bottom: 10px;
+}
+
+#person-img {
+  border-radius: 50%;
 }
 
 #job {
