@@ -3,21 +3,21 @@ const reviews = [
     id: 1,
     name: "Ruby Cox",
     job: "web designer",
-    img: "https://source.unsplash.com/random/100x100/?person",
+    img: "https://source.unsplash.com/random/100x100/?happyperson",
     text: "Outstanding service and fast communication. Thank you very much."
   },
   {
     id: 2,
     name: "Travis King",
     job: "Web developper",
-    img: "https://source.unsplash.com/random/100x100/?person",
+    img: "https://source.unsplash.com/random/100x100/?woman",
     text: "Great result. Thanks."
   },
   {
     id: 3,
     name: "Rebecca Rice",
     job: "Web project manager",
-    img: "https://source.unsplash.com/random/100x100/?person",
+    img: "https://source.unsplash.com/random/100x100/?man",
     text: "Amazingly outstanding result and quick communication Thanks a bunch!"
   },
   {
@@ -43,13 +43,40 @@ let currentItem = 0;
 
 // load initial item
 window.addEventListener("DOMContentLoaded", function () {
-  showPerson(currentItem);
+  showPerson();
 });
 
-function showPerson(person) {
-  const item = reviews[person];
+function showPerson() {
+  const item = reviews[currentItem];
   img.src = item.img;
   author.textContent = item.name;
   job.textContent = item.job;
   info.textContent = item.text;
 }
+
+// show next person
+nextBtn.addEventListener("click", function () {
+  currentItem++;
+  if(currentItem > reviews.length - 1) {
+    currentItem = 0;
+  }
+  showPerson();
+});
+
+// show prev person
+prevBtn.addEventListener("click", function () {
+  currentItem--;
+  if(currentItem < 0) {
+    currentItem = reviews.length - 1;
+  }
+  showPerson();
+});
+
+// show random person
+randomBtn.addEventListener("click", function () {
+  currentItem--;
+  if(currentItem < 0) {
+    currentItem = reviews.length - 1;
+  }
+  showPerson();
+});
