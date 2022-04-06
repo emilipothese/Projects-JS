@@ -27,3 +27,7 @@ article {
   text-transform: uppercase;
   color: #5fc9d5;
 }
+
+button {
+  margin-top: 5px;
+}
