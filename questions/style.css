@@ -12,6 +12,27 @@ body {
 .question-title {
   display: flex;
   justify-content: space-between;
-  padding-bottom: 5px; 
-  border-bottom: 1px solid #ccc;
+  padding-bottom: 5px;
+}
+
+/* hide text */
+.question-text {
+  display: none;
+  border-top: 1px solid #ccc;
+}
+
+.show-text .question-text {
+  display: block;
+}
+
+.minus-icon {
+  display: none;
+}
+
+.show-text .minus-icon {
+  display: inline;
+}
+
+.show-text .plus-icon {
+  display: none;
 }
