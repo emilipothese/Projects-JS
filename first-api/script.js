@@ -21,3 +21,18 @@ const arr = ["Laurence", 100, true, null, {
 console.log(arr);
 console.log(arr[2]);
 console.log(arr[4].last);
+
+
+// Loop
+const obj3 = {
+  "first" : "Laurence",
+  "last" : "D'Arabie",
+  "id" : 100,
+};
+
+for( const [key, value] of Object.entries(obj3)){
+  console.log(value)
+}
+
+
+const arr1 = ["Laurence", "D'arabie", 100];
