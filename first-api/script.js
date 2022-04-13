@@ -30,9 +30,18 @@ const obj3 = {
   "id" : 100,
 };
 
+// Loop Object
 for( const [key, value] of Object.entries(obj3)){
   console.log(value)
 }
 
-
+// Loop array
 const arr1 = ["Laurence", "D'arabie", 100];
+
+for( let i = 0; i < arr1.length; i++) {
+  console.log(arr1[i]);
+}
+
+for( i in arr1) {
+  console.log(i,arr1[i]);
+}
