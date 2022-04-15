@@ -15,37 +15,24 @@ console.log(jsObj1[0].first);
 
 
 // JSON fetch
-const json = {
-  "friends": [
-    {
-      "first" : "Tom",
-      "last" : "The Cat",
-      "id" : 100
-    },
-    {
-      "first" : "Jerry",
-      "last" : "The Mouse",
-      "id" : 99
-    },
-    {
-      "first" : "Titi",
-      "last" : "The Canirie",
-      "id" : 98
-    },
-    {
-      "first" : "Pluto",
-      "last" : "The Dog",
-      "id" : 97
-    },
-  ]
+function getData(){
+  const url = 'json6.json';
+  fetch(url)
+  .then((rep) => rep.text())
+  .then((data) => {
+    console.log(data);
+    const jsObj = JSON.parse(data)
+  })
 }
 
-console.clear();
-console.log(json);
+// console.clear();
+// console.log(json);
 
 function output(){
   json.friends.forEach((person) => {
     const temp = `${person.first} ${person.last} ${person.id}`;
     console.log(temp);
+
   })
 }
+// output();

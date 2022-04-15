@@ -1,0 +1,24 @@
+{
+  "friends": [
+    {
+      "first" : "Tom",
+      "last" : "The Cat",
+      "id" : 100
+    },
+    {
+      "first" : "Jerry",
+      "last" : "The Mouse",
+      "id" : 99
+    },
+    {
+      "first" : "Titi",
+      "last" : "The Canirie",
+      "id" : 98
+    },
+    {
+      "first" : "Pluto",
+      "last" : "The Dog",
+      "id" : 97
+    },
+  ]
+}
