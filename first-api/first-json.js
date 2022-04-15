@@ -42,3 +42,10 @@ const json = {
 
 console.clear();
 console.log(json);
+
+function output(){
+  json.friends.forEach((person) => {
+    const temp = `${person.first} ${person.last} ${person.id}`;
+    console.log(temp);
+  })
+}
