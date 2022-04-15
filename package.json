@@ -1,0 +1,23 @@
+{
+  "name": "projects-js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "serve": "webpack serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emilipothese/Projects-JS.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/emilipothese/Projects-JS/issues"
+  },
+  "homepage": "https://github.com/emilipothese/Projects-JS#readme",
+  "devDependencies": {
+    "webpack-dev-server": "^4.8.1"
+  }
+}
