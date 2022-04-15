@@ -15,24 +15,37 @@ console.log(jsObj1[0].first);
 
 
 // JSON fetch
+// Lancer getData(); dans la console pour exécuter
 function getData(){
   const url = 'json6.json';
   fetch(url)
   .then((rep) => rep.text())
   .then((data) => {
     console.log(data);
-    const jsObj = JSON.parse(data)
+    const jsObj = JSON.parse(data);
+    console.log(jsObj);
+    output(jsObj);
+  })
+}
+
+// Même qu'avant mais avec .json (parse directement)
+function getData2(){
+  const url = 'json6.json';
+  fetch(url)
+  .then((rep) => rep.json())
+  .then((data) => {
+    console.log(data);
+    output(data);
   })
 }
 
 // console.clear();
 // console.log(json);
 
-function output(){
-  json.friends.forEach((person) => {
+function output(data){
+  data.friends.forEach((person) => {
     const temp = `${person.first} ${person.last} ${person.id}`;
     console.log(temp);
 
   })
 }
-// output();
