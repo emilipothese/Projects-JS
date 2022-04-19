@@ -1,4 +1,4 @@
-const url = "https://script.google.com/macros/s/AKfycbwTdEiJbw71Nj0a3O25CGpGX0V3Pnlj8wp0rEWtdQYBCDM2yiOJDnl_5ofTxKcNCV2aHw/exec";
+const url = "https://script.google.com/macros/s/AKfycbyVKJp0pD-Qf6N9UrVlj8U6h1CcB84DEBkIxmzqTcti75015zbImUMSmgV0uCQOFq1Xzw/exec";
 const btn = document.querySelector(".btn");
 const output = document.querySelector(".output");
 btn.textContent = "Get Sheet data";
@@ -12,7 +12,7 @@ btn.onclick = (e)=>{
        const rows = data.slice(1);
        output.innerHTML = JSON.stringify(data);
        outputData(headings,rows);
-     }) 
+     })
 }
 
 function outputData(headings,rows) {
