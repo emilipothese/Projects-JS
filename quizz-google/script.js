@@ -55,18 +55,15 @@ function startGame() {
     })
     if (el.correct == el.selOpt) {
       game.score++;
-      const main = maker('div', output, 'main', 'Correct
-        answer ');
+      const main = maker('div', output, 'main', 'Correct answer ');
         el.style.color = 'white'; el.style.backgroundColor = 'green';
       }
       else {
-        const main = maker('div', output, 'main', `Wrong answer
-was ${el.correct}`);
+        const main = maker('div', output, 'main', `Wrong answer was ${el.correct}`);
         el.style.color = 'white';
         el.style.backgroundColor = 'red';
       }
-      const btn1 = maker('button', output, 'btn1', `Next
-Question`);
+      const btn1 = maker('button', output, 'btn1', `Next Question`);
       game.que++;
       const total = game.data.length - game.que;
       console.log(`remaining ${total}`);
@@ -81,15 +78,12 @@ Question`);
 
     function endGame() {
       //output.textContent = JSON.stringify(game); output.innerHTML = ''; game.ans.forEach((ele, ind) => {
-      let html = `Q:${game.data[ind].question}
-C:${game.data[ind].answer} R:${ele}`;
+      let html = `Q:${game.data[ind].question} C:${game.data[ind].answer} R:${ele}`;
       const div = maker('div', output, 'main', html);
-      const bg = (game.data[ind].answer == ele) ? 'green' :
-        'red';
+      const bg = (game.data[ind].answer == ele) ? 'green' : 'red';
       div.style.color = bg;
-    })
-  const htmlScore = `Your final score :  ${game.score} correct
-out of ${game.data.length} questions.`;
+    }
+  const htmlScore = `Your final score :  ${game.score} correct out of ${game.data.length} questions.`;
   const div = maker('div', output, 'main', htmlScore);
   div.style.fontSize = '1.5em';
   console.log(game);
