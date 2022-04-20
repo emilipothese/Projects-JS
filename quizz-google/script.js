@@ -77,12 +77,13 @@ function startGame() {
     }
 
     function endGame() {
-      //output.textContent = JSON.stringify(game); output.innerHTML = ''; game.ans.forEach((ele, ind) => {
+      output.innerHTML = '';
+      game.ans.forEach((ele, ind) => {
       let html = `Q:${game.data[ind].question} C:${game.data[ind].answer} R:${ele}`;
       const div = maker('div', output, 'main', html);
       const bg = (game.data[ind].answer == ele) ? 'green' : 'red';
       div.style.color = bg;
-    }
+    })
   const htmlScore = `Your final score :  ${game.score} correct out of ${game.data.length} questions.`;
   const div = maker('div', output, 'main', htmlScore);
   div.style.fontSize = '1.5em';
@@ -94,4 +95,5 @@ function maker(t, p, c, h) {
   el.classList.add(c);
   el.innerHTML = h;
   return p.appendChild(el);
+}
 }
