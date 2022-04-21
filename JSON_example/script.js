@@ -5,3 +5,12 @@ btn.textContent = "Click me";
 output.append(btn);
 output.append(results);
 results.textContent = "Message";
+
+btn.addEventListener("click", (e) => {
+  const url = "data.json";
+  fetch(url)
+  .then(rep => rep.json())
+  .then((data) => {
+    console.log(data);
+  })
+})
