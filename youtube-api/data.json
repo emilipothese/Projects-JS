@@ -1,0 +1,28 @@
+[
+  {
+    "people" : [
+      {
+        "names" : [
+          {
+            "first": "Tom",
+            "last": "The Cat"
+          },
+          {
+            "first": "Jerry",
+            "last": "The Mouse"
+          }
+        ]
+      },
+      {
+        "cities" : [
+          "Paris", "Fribourg"
+        ]
+      }
+    ]
+  },
+  {
+    "country" : [
+      "France", "USA", "Germany"
+    ]
+  }
+]
