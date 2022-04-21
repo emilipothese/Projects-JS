@@ -19,5 +19,10 @@
         ]
       }
     ]
+  },
+  {
+    "country" : [
+      "France", "USA", "Germany"
+    ]
   }
 ]
